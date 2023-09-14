@@ -4,6 +4,8 @@ import './App.css';
 import { createClient } from 'contentful';
 import RecipeCards from './Components/RecipeCards';
 import RecipeInstructions from './Components/RecipeInstructions';
+import HomePage from "./Components/Homepage";
+
 
 function App() {
   const [recipes, setRecipes] = useState([]);
@@ -27,8 +29,9 @@ console.log(recipes);
     <>
 <h1>Contentful</h1>
 <Routes>
-  <Route path="/" element={<RecipeCards recipes={recipes}/>} />
-  <Route path="/:id" element={<RecipeInstructions recipes={recipes}/>} />
+ <Route path="/" element={<HomePage recipes={recipes}/>} />
+  <Route path="recipecards" element={<RecipeCards recipes={recipes}/>} />
+  <Route path="recipecards/:id" element={<RecipeInstructions recipes={recipes}/>} />
 </Routes>
     </>
   )
