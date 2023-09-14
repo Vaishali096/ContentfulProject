@@ -1,0 +1,36 @@
+import { useState, useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
+import './App.css';
+import { createClient } from 'contentful';
+import RecipeCards from './Components/RecipeCards';
+import RecipeInstructions from './Components/RecipeInstructions';
+
+function App() {
+  const [recipes, setRecipes] = useState([]);
+  
+  const client = createClient({
+    space: "z6djbtsjwacx",
+    accessToken: "btwYTx3RnBmekwMDx69C54Rk2IiPLtq9qzG8e3e7p1s",
+  });
+
+  async function fetchRecipes(){
+const entryItems= await client.getEntries()
+console.log(entryItems);
+setRecipes(entryItems.items);
+  }
+useEffect(()=>{
+  fetchRecipes();
+},[]);
+
+console.log(recipes);
+  return (
+    <>
+<h1>Contentful</h1>
+<Routes>
+  <Route path="/" element={<RecipeCards recipes={recipes}/>} />
+  <Route path="/:id" element={<RecipeInstructions recipes={recipes}/>} />
+</Routes>
+    </>
+  )
+}
+export default App
