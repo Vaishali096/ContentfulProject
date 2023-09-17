@@ -29,11 +29,11 @@ console.log(recipes);
     <>
 <h1>Contentful</h1>
 <Routes>
- <Route path="/" element={<HomePage recipes={recipes}/>} />
+  <Route path="/" element={<HomePage recipes={recipes}/>} />
   <Route path="recipecards" element={<RecipeCards recipes={recipes}/>} />
   <Route path="recipecards/:id" element={<RecipeInstructions recipes={recipes}/>} />
 </Routes>
-    </>
+  </>
   )
 }
 export default App
