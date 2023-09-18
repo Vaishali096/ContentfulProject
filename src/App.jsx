@@ -27,23 +27,14 @@ function App() {
   console.log("app up", recipes);
   return (
     <>
-      <Link to={"/"}>
-        <h1>Our happy recipes</h1>
-      </Link>
 
-      <Routes>
-        <Route path="/" element={<HomePage recipes={recipes} />} />
-        <Route path="recipecards" element={<RecipeCards recipes={recipes} />} />
-        <Route
-          path="recipeinstructions/:id"
-          element={<RecipeInstructions recipes={recipes} />}
-        />
 
-        {/*   <Route
-          path="recipecards/:id"
-          element={<RecipeInstructions recipes={recipes} />}
-        /> */}
-      </Routes>
+<Routes>
+ <Route path="/" element={<HomePage recipes={recipes}/>} />
+  <Route path="recipecards" element={<RecipeCards recipes={recipes}/>} />
+  <Route path="recipecards/:id" element={<RecipeInstructions recipes={recipes}/>} />
+</Routes>
+
     </>
   );
 }

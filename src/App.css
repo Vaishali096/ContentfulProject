@@ -1,3 +1,4 @@
+
 /* Sonia */
 .recipeside {
   background-color: #d98a52;
@@ -41,3 +42,185 @@
   object-fit: cover;
   border-radius: 5px;
 }
+
+
+.singlerecipe{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.singlerecipe p{
+padding: 3%;
+margin-left: 5%;
+}
+.singleMember{
+    margin: 5%;
+    margin-top: 0;
+    color: black;
+    height:100vh;
+}
+.singleMember img{
+width: 200px;
+height: 200px;
+}
+.singleMember h2{
+    justify-content: center;
+    text-align: center;
+}
+.singleMember button{
+    padding: 10px;
+    /* border-radius: 20px; */
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 20px;
+    margin-left: 40%;
+    width: 25%;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* John */
+body{
+    margin: 0;
+    padding: 0;
+  }
+  .johnLogo {
+        width: 50px;
+        margin-top: 5%;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .johnTitle {
+        color: white;
+    }
+    .johnLink {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border-radius: 20px;
+        width: 30%;
+        color: black;
+        text-decoration: none;
+        font-size: larger;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        transition: 0.3s ease;
+        text-align: center;
+    }
+    .johnEverything {
+        background-image: url("./assets/1000_F_252124067_aCtp9ZD934RboKmjJzkXiwYDL7XkNjpn.jpg");
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+    .JtitleLink{
+        margin-left: 5%;
+        text-decoration: none;
+    }
+    .JtitleLink :hover {
+        transition: 0.3s ease;
+        color: black;
+        transform: scale(1.2);
+        background-color: grey;
+        border-radius: 20px;
+    }
+    .johnLink:hover {
+        background-color: grey;
+    }
+    .JohnBar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.5);
+        height: 10vh;
+        border: solid rgba(0, 0, 0, 0.5) 5px;
+    }
+    .frontTitle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 55vh;
+        margin-top: 5%;
+    }
+    
+    .johnUl {
+        list-style: none;
+    }
+    .johnP {
+        align-items: center;
+        text-align: center;
+        color: white;
+        height: 50%;
+        width: 27%;
+        border-bottom: solid white 10px;
+        border-left: solid white 10px;
+        border-right: solid white 10px;
+        border-radius: 20px;
+    }
+    .johnH1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        width: 30%;
+        border-bottom: solid white 10px;
+        border-radius: 20px;
+        transform: rotate(345deg);
+        margin-bottom: 4%;
+        margin-left: -1%;
+    }
+    .johnSearch {
+        margin-right: 5vw;
+        transition: 0.3s;
+        width: 30%;
+        border: none;
+    }
+    .johnSearch:focus {
+        outline: none;
+        width: 2;
+        height: 2;
+        border: grey solid 5px;
+    }
+    .buttonDiv{
+        width: 100vw;
+        height: 7vh;
+        text-align: center;
+    }
+    .johnButton {
+        width: auto;
+        margin-top: 2%;
+        height: 100%;
+        width: 27%;
+        background-color: rgba(255, 255, 255, 0.5);
+        border: solid grey 2px;
+        transition: ease 0.3s;
+    }
+    .johnButton:hover {
+        background-color: white;
+        color: black;
+        cursor: pointer;
+    }
+    .johnRight {
+        width: 50vw;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .johnLeft {
+        display: flex;
+        margin-left: 5%;
+        width: 50%;
+    }
+    .johnNav {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        margin-right: 5%;
+    }
+    
+
+
