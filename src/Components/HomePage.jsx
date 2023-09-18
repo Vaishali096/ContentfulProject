@@ -1,11 +1,29 @@
-import { useNavigate } from "react-router-dom";
+import Navbar from "./Navbar";
+import { NavLink } from "react-router-dom";
 
-export default function HomePage() {
-  const navigate = useNavigate();
-  return (
-    <>
-      <h1>Homepage</h1>
-      <button onClick={() => navigate("/RecipeCards")}>start</button>
-    </>
-  );
+export default function HomePage(){
+    return(
+        <>
+            <div className="johnEverything">
+                <Navbar />
+                <div className="frontTitle">
+                    <h1 className="johnH1">SVG</h1>
+                    <h2 className="johnP">
+                    Recipies from:
+                        <ul className="johnUl">
+                        <li className="johnLi">Sonia</li>
+                        <li className="johnLi">Vaishali</li>
+                        <li className="johnLi">Gianni</li>
+                        </ul>
+                    </h2>
+                </div>
+                <div className="buttonDiv">
+                    <NavLink to="/recipecards">
+                        <button className="johnButton">Start Cookin'</button>
+                    </NavLink>
+                </div>
+            </div>
+        </>
+    );
 }
+
