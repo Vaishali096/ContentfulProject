@@ -15,16 +15,8 @@ export default function RecipeCards({ recipes }) {
             <img src={recipe.fields.picture.fields.file.url} />
           </div>
         ))}
-    return(
-        <>
-        {recipes && recipes.map(recipe =>(
-            <div className="recipecard" key={recipe.sys.id}>
-                <Link to={`${recipe.sys.id}`}>
-    <h1>{recipe.fields.recipeName}</h1>
-    </Link>
-    <img src= {recipe.fields.picture.fields.file.url}/>
-  </div>
-))}
-    </>
-  );
-}
+                  </>
+
+        );
+      }
+

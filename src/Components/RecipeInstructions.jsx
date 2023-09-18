@@ -8,11 +8,18 @@ export default function RecipeInstructions({ recipes }) {
   return (
     <>
       <div className="singleMember">
-        <h1>Name</h1>
-        <h1>{oneRecipe && oneRecipe.fields.recipeName}</h1>
+        <h2>{oneRecipe && oneRecipe.fields.recipeName}</h2>
+        <div className= "singlerecipe">
         <img
           src={`/${oneRecipe && oneRecipe.fields.picture.fields.file.url}`}
         />
+        <p> Ingredients:
+          <br />
+          <br />
+          {oneRecipe && oneRecipe.fields.ingredients}</p>
+        </div>
+        <p>Instructions:</p>
+        <p>{oneRecipe && oneRecipe.fields.instruction}</p>
         <button onClick={() => navigate("/RecipeCards")}>
           Back to Recipes
         </button>
