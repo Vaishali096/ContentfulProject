@@ -27,7 +27,7 @@ useEffect(()=>{
 console.log(recipes);
   return (
     <>
-<h1>Contentful</h1>
+
 <Routes>
  <Route path="/" element={<HomePage recipes={recipes}/>} />
   <Route path="recipecards" element={<RecipeCards recipes={recipes}/>} />
