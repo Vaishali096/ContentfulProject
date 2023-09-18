@@ -5,16 +5,22 @@ export default function RecipeCards({ recipes }) {
   console.log("recipe cards up", recipes);
 
   return (
-    <>
+    <div className="recipeside">
       {recipes &&
         recipes.map((recipe) => (
           <div className="recipecard" key={recipe.sys.id}>
-            <Link to={`/recipeinstructions/${recipe.sys.id}`}>
-              <h1>name:{recipe.fields.recipeName}</h1>
+            <Link
+              className="link-s"
+              to={`/recipeinstructions/${recipe.sys.id}`}
+            >
+              <h1 className="title-s">{recipe.fields.recipeName}</h1>
             </Link>
-            <img src={recipe.fields.picture.fields.file.url} />
+            <img
+              className="img-s"
+              src={recipe.fields.picture.fields.file.url}
+            />
           </div>
         ))}
-    </>
+    </div>
   );
 }
