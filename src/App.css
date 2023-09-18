@@ -1,3 +1,39 @@
+
+.singlerecipe{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.singlerecipe p{
+padding: 3%;
+margin-left: 5%;
+}
+.singleMember{
+    margin: 5%;
+    margin-top: 0;
+    color: black;
+    height:100vh;
+}
+.singleMember img{
+width: 200px;
+height: 200px;
+}
+.singleMember h2{
+    justify-content: center;
+    text-align: center;
+}
+.singleMember button{
+    padding: 10px;
+    /* border-radius: 20px; */
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 20px;
+    margin-left: 40%;
+    width: 25%;
+    background: transparent;
+    cursor: pointer;
+}
+
 /* John */
 body{
     margin: 0;
@@ -141,3 +177,4 @@ body{
         margin-right: 5%;
     }
     
+

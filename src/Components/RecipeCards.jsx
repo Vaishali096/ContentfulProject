@@ -15,6 +15,8 @@ export default function RecipeCards({ recipes }) {
             <img src={recipe.fields.picture.fields.file.url} />
           </div>
         ))}
-    </>
-  );
-}
+                  </>
+
+        );
+      }
+
