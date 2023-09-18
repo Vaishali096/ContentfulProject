@@ -1,4 +1,49 @@
 
+/* Sonia */
+.recipeside {
+  background-color: #d98a52;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.recipecard {
+  margin: 15px;
+  padding: 10px;
+  border: 2px solid rgb(197, 81, 81);
+  border-radius: 10px;
+  width: 20vw;
+  background-color: #dc8e81;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.recipecard:hover {
+  transform: scale(1.09);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.title-s {
+  color: rgb(60, 49, 49);
+  font-size: 1.8rem;
+}
+
+.title-s:hover {
+  color: #a94605;
+}
+
+.link-s {
+  text-decoration: none;
+}
+
+.img-s {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+
 .singlerecipe{
     display:flex;
     justify-content: space-evenly;
@@ -177,4 +222,5 @@ body{
         margin-right: 5%;
     }
     
+
 
