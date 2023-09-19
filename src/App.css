@@ -54,30 +54,43 @@ padding: 3%;
 margin-left: 5%;
 }
 .singleMember{
-    margin: 5%;
-    margin-top: 0;
+    color: white;
+    /* margin: 5%; */
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     color: black;
-    height:100vh;
+    background-color: #dc8e81;
 }
+
+
 .singleMember img{
 width: 200px;
 height: 200px;
 }
-.singleMember h2{
+.singleMember h3{
     justify-content: center;
     text-align: center;
+    background-color: #d98a52;
+    color:black;
+    border: 2px solid rgb(197, 81, 81);
+    padding: 3px;
 }
 .singleMember button{
     padding: 10px;
-    /* border-radius: 20px; */
+    border-radius: 20px;
     justify-content: center;
     align-self: center;
     margin-bottom: 20px;
     margin-left: 40%;
     width: 25%;
-    background: transparent;
     cursor: pointer;
+    background-color: #d98a52;
+    color: black;
+    border: 2px solid rgb(197, 81, 81);
 }
+
 
 /* John */
 body{
