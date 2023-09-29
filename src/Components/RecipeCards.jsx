@@ -11,18 +11,32 @@ export default function RecipeCards({ recipes }) {
       <div className="recipeside">
         {recipes &&
           recipes.map((recipe) => (
-            <div className="recipecard" key={recipe.sys.id}>
+            // <div className="recipecard" key={recipe.sys.id}>
+            //   <Link
+            //     className="link-s"
+            //     to={`/recipeinstructions/${recipe.sys.id}`}
+            //   >
+            //     <h1 className="title-s">{recipe.fields.recipeName}</h1>
+            //   </Link>
+            //   <img
+            //     className="img-s"
+            //     src={recipe.fields.picture.fields.file.url}
+            //   />
+            // </div>
+
+             <div className="recipecard" key={recipe.id}>
               <Link
                 className="link-s"
-                to={`/recipeinstructions/${recipe.sys.id}`}
+                to={`/recipeinstructions/${recipe.id}`}
               >
-                <h1 className="title-s">{recipe.fields.recipeName}</h1>
+                <h1 className="title-s">{recipe.recipe_name}</h1>
               </Link>
               <img
                 className="img-s"
-                src={recipe.fields.picture.fields.file.url}
+                src={recipe.image_url}
               />
             </div>
+
           ))}
       </div>
     </div>

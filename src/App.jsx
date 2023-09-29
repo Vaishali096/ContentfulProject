@@ -4,24 +4,33 @@ import "./App.css";
 import { createClient } from "contentful";
 import RecipeCards from "./Components/RecipeCards";
 import RecipeInstructions from "./Components/RecipeInstructions";
-import HomePage from "./Components/Homepage";
+import HomePage from "./Components/HomePage";
 import { Link } from "react-router-dom";
 
 function App() {
   const [recipes, setRecipes] = useState([]);
 
-  const client = createClient({
-    space: "z6djbtsjwacx",
-    accessToken: "btwYTx3RnBmekwMDx69C54Rk2IiPLtq9qzG8e3e7p1s",
-  });
+  const myAPI = "http://localhost:8080/recipecards";
 
-  async function fetchRecipes() {
-    const entryItems = await client.getEntries();
-    console.log("fetch fumction", entryItems);
-    setRecipes(entryItems.items);
+  const fetchData = async()=>{
+    const res = await fetch(myAPI);
+    const data = await res.json();
+    setRecipes(data);
   }
+
+  // const client = createClient({
+  //   space: "z6djbtsjwacx",
+  //   accessToken: "btwYTx3RnBmekwMDx69C54Rk2IiPLtq9qzG8e3e7p1s",
+  // });
+
+  // async function fetchRecipes() {
+  //   const entryItems = await client.getEntries();
+  //   console.log("fetch fumction", entryItems);
+  //   setRecipes(entryItems.items);
+  // }
   useEffect(() => {
-    fetchRecipes();
+    fetchData();
+    // fetchRecipes();
   }, []);
 
   console.log("app up", recipes);
