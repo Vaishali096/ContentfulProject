@@ -4,7 +4,7 @@ import "./App.css";
 import { createClient } from "contentful";
 import RecipeCards from "./Components/RecipeCards";
 import RecipeInstructions from "./Components/RecipeInstructions";
-import HomePage from "./Components/HomePage";
+import HomePage from "./Components/Homepage";
 import { Link } from "react-router-dom";
 
 function App() {
